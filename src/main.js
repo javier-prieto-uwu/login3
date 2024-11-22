@@ -17,6 +17,9 @@ const firebaseConfig = {
   appId: "1:192237363446:web:a7d03b977b7b4944c50cd7"
 };
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 // Initialize Firebase
 initializeApp(firebaseConfig);
 
