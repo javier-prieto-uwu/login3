@@ -265,119 +265,101 @@
     <hr class="divisor">
 
 
-    <div class="container mt-2">
+    <div>
       <div class="row">
         <div class="col-md-12 form-container">
-          <h3>Universidades</h3>
+          <h3>Reseñas</h3>
 
           <div class="background">
             <div>
-              <div class="articles">
+              <div class="resenas">
                 <article>
-                  <figure>
-                    <img
-                      src="https://i.pinimg.com/736x/8d/ca/51/8dca51990184060db869655e4f4c0ab5.jpg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UTRM</h2>
+                  <div class="resenas-comentario">
+                    <h2>Tips que no encuentras ni en los apuntes</h2>
                     <p>
-                      La Universidad Tecnológica de la Riviera Maya (UTRM) es
-                      una institución pública bilingüe ubicada en el estado de
-                      Quintana Roo, más precisamente en ña ciudad de Playa del
-                      Carmen, Esta institución cuenta con instalaciones y
-                      servicios que permiten que sus estudiantes obtengan
-                      beneficios a lo largo de la cursada.
-                      <a href="https://utrivieramaya.edu.mx/"
-                        >Más información</a
-                      >
+                      "Gracias a este foro, encontré
+                      genti de mi carrera y de otras
+                      que me ha echado la mano en mil
+                      cosas. Está súper chido poder
+                      preguntar cualquier duda y recibir
+                      respuestas de otros estudiantes
+                      que ya pasaron por lo mismo. Es
+                      como tener un equipo en toda la
+                      uni"
                     </p>
-                  </div>
-
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
+                    <figure>
+                      <img src="img/placeholder.png">
+                      <p class="resenas-nombre">Estudiante</p>
+                      <p>UT</p>
+                    </figure>
                   </div>
 
                 </article>
 
                 <article>
-                  <figure>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyX1KdojAtD6srHC3zR3Qk6gwNOmjdISA-UYrF4Cw1kzhvVDdRZON5uM23_n1meG9QSQ&usqp=CAU"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UQROO</h2>
+                  <div class="resenas-comentario">
+                    <h2>Socializo más ahora, conoci gente linda</h2>
                     <p>
-                      La Universidad Autónoma del Estado de Quintana Roo
-                      (UAEQROO) es la principal universidad pública del estado
-                      de Quintana Roo, con sede en la ciudad de Chetumal así
-                      como unidades académicas en la isla de Cozumel, la ciudad
-                      de Playa del Carmen y en Cancún. teniendo más de 16
-                      carreras disponibles en sus campus.
-
-                      <a href="https://www.uqroo.mx/">Más información</a>
+                      "No sabía cuánto necesitaba un
+                      espacio así hasta que entré. Es
+                      como un grupo de compas que
+                      entienden lo que es estar en la
+                      uni y te tiran paro sin pensarlo.
+                      Aquí he encontrado amigos,
+                      personas genuinas que comparten mis inquietudes y me
+                      hacen sentir acompañado. Me
+                      siento más conectado, y eso no
+                      tiene precio."
                     </p>
-                  </div>
-
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
+                    <figure>
+                      <img src="img/placeholder.png">
+                      <p class="resenas-nombre">Estudiante</p>
+                      <p>UQROO</p>
+                    </figure>
                   </div>
 
                 </article>
 
                 <article>
-                  <figure>
-                    <img src="https://i.pinimg.com/736x/db/74/35/db7435b19f8c42bfc1ef6eae23212877.jpg" alt="" />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UNID</h2>
+                  <div class="resenas-comentario">
+                    <h2>Crisis estudiantiles resueltas, gracias a ustedes, comunidad</h2>
                     <p>
-                      La Universidad Interamericana para el Desarrollo es una
-                      universidad privada mexicana, contando con 50 campuses,
-                      teniendo su precensia en más de la mitad de las entidades
-                      federativas de México. Ofrece 20 licenciaturas y 50
-                      programas educativos de educación media superior y
-                      superior en varias áreas, como negocios, pedalogía etc.
-
-                      <a
-                        href="https://www.unid.talisis.com/campus/playa-del-carmen"
-                        >Más información</a
-                      >
+                      "Nunca pensé que un foro podría
+                      ayudarme tanto en esos 
+                      momentos de estrés, siempre 
+                      alguien aparece con un consejo o
+                      una explicación que me calma. Es
+                      cool saber que hay personas
+                      dispuestas a ayudar sin esperar
+                      nada a cambio. De verdad,
+                      gracias por ser esa comunidad que me hace sentir menos solo"
                     </p>
-                  </div>
-
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
+                    <figure>
+                      <img src="img/placeholder.png">
+                      <p class="resenas-nombre">Estudiante</p>
+                      <p>UNID</p>
+                    </figure>
                   </div>
 
                 </article>
 
                 <article>
-                  <figure>
-                    <img src="https://i.pinimg.com/736x/db/74/35/db7435b19f8c42bfc1ef6eae23212877.jpg" alt="" />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UNID</h2>
+                  <div class="resenas-comentario">
+                    <h2>Nunca ha sido más fácil comunicarme con todos mis estudiantes</h2>
                     <p>
-                      La Universidad Interamericana para el Desarrollo es una
-                      universidad privada mexicana, contando con 50 campuses,
-                      teniendo su precensia en más de la mitad de las entidades
-                      federativas de México. Ofrece 20 licenciaturas y 50
-                      programas educativos de educación media superior y
-                      superior en varias áreas, como negocios, pedalogía etc.
-
-                      <a
-                        href="https://www.unid.talisis.com/campus/playa-del-carmen"
-                        >Más información</a
-                      >
+                      "Normalmente, siempre hay un estudiante, 
+                      o dos, que me llegan a clase sin la tarea,
+                      diciendo que no sabían y que no comunique,
+                      pero ya no más, el foro para profesores ayuda
+                      a siempre tener todas las noticias sobre eventos, 
+                      trabajos y exámenes siempre disponibles en un
+                      lugar fácil de acceder.
                     </p>
-                  </div>
-
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
+                    <figure>
+                      <img src="img/placeholder.png" >
+                      <p class="resenas-nombre">Profesor</p>
+                      <p>Riviera</p>
+                    </figure> 
                   </div>
 
                 </article>
@@ -616,6 +598,44 @@ h3 {
   transform: scale(1.5);
 }
 
+.resenas {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*resena sin ñ para que no haya posibilidad que se cage el programa*/
+
+.resenas article {
+  max-width: 320px;
+  display: block;
+  overflow: hidden;
+}
+
+.resenas-comentario {
+  padding: 40px;
+}
+
+.resenas-nombre {
+  color: rgb(252, 57, 57) !important;
+}
+
+.resenas figure img {
+  height: 50px;
+  width: 50px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  padding-right: 30px;
+}
+
+.resenas h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
 
 body{
     font-family: 'poppins', sans-serif;
