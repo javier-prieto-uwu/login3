@@ -3,6 +3,8 @@
    <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 form-container">
+          <img class="logog" src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
+          <h1>ARCANUM</h1>
           <h1 class="">FORO ESTUDIANTIL</h1>
           <!-- Start Form -->
           <p class="space">
@@ -22,7 +24,7 @@
         </div>
 
         <div class="col-md-6">
-          <img src="/src/assets/grupo-amigos-haciendo-selfie-clase 1.png" alt="" />
+          <img src="https://i.ibb.co/mBjyxgR/grupo-amigos-haciendo-selfie-clase-1.png" alt="" />
           <div class=""></div>
           <div>
             <h2>Un foro dinámico, amplía tu comunidad.</h2>
@@ -36,6 +38,8 @@
       </div>
     </div>
 
+    <hr class="divisor">
+
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-10 form-container">
@@ -47,7 +51,7 @@
                 <article>
                   <figure>
                     <img
-                      src="/src/assets/logo-universidad-tecnologica-de-la-riviera-maya.jpg"
+                      src="https://i.pinimg.com/736x/8d/ca/51/8dca51990184060db869655e4f4c0ab5.jpg"
                       alt=""
                     />
                   </figure>
@@ -65,6 +69,11 @@
                       >
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
 
                 <article>
@@ -87,11 +96,16 @@
                       <a href="https://www.uqroo.mx/">Más información</a>
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
 
                 <article>
                   <figure>
-                    <img src="img/logo-unid.jpg" alt="" />
+                    <img src="https://i.pinimg.com/736x/db/74/35/db7435b19f8c42bfc1ef6eae23212877.jpg" alt="" />
                   </figure>
                   <div class="article-preview">
                     <h2>UNID</h2>
@@ -101,8 +115,7 @@
                       teniendo su precensia en más de la mitad de las entidades
                       federativas de México. Ofrece 20 licenciaturas y 50
                       programas educativos de educación media superior y
-                      superior en varias áreas, como negocios, pedalogía y
-                      humanidades, derecho etc.
+                      superior en varias áreas, como negocios, pedalogía etc.
 
                       <a
                         href="https://www.unid.talisis.com/campus/playa-del-carmen"
@@ -110,12 +123,17 @@
                       >
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
 
                 <article>
                   <figure>
                     <img
-                      src="img/logo-riviera1.png"
+                      src="https://i.pinimg.com/474x/2f/a8/a3/2fa8a343353771439877f642453e02eb.jpg"
                       alt=""
                       style="background-color: white"
                     />
@@ -136,12 +154,17 @@
                       >
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
 
                 <article>
                   <figure>
                     <img
-                      src="img/logo-viz.png"
+                      src="https://www.emagister.com.mx/assets/mx/logos/centro/id/16855/size/l.jpg"
                       alt=""
                       style="background-color: white"
                     />
@@ -161,204 +184,12 @@
                       >
                     </p>
                   </div>
-                </article>
-                <!--Lo dejo aqui por si quieren poner otra universidad-->
-                <article>
-                  <figure>
-                    <img
-                      src="img/logo-viz.png"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UTECI</h2>
-                    <p>
-                      Age of Empires is a series of historical real-time
-                      strategy video games, originally developed by Ensemble
-                      Studios and published by Xbox Game Studios. The first game
-                      was Age of Empires, released in 1997. Nine total games
-                      within the series have been released so far as of October
-                      28, 2021..actuales s have been released so far as of October
-                      far as of October far as of October
-                      far as of October
 
-                      <a href="https://en.wikipedia.org/wiki/Age_of_Empires"
-                        >Más info aquí ^w^</a
-                      >
-                    </p>
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
                   </div>
+
                 </article>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-2 form-container">
-          <h3>Y más</h3>
-
-          <div class="background2">
-            <div>
-              <div class="articles">
-                <article>
-                  <figure>
-                    <img
-                      src="img/Green Brown Minimalist Shield Hand Logo (1) 1.png"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>Y más</h2>
-                    <p>
-                      Somos un equipo con nuestra meta de poder unir más a los
-                      estudiantes de las universidades para crear más
-                      oportunidades para ellos, subiendo el nivel de satisfación
-                      en las escuelas, además de tener un sitio general para
-                      recibir noticias sobre la universidad de una forma fácil,
-                      simple y eficiente para los estudiantes y los profesores.
-                   
-
-                      <a href="#">Más información</a>
-                    </p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-10 form-container">
-          <h3>Universidades</h3>
-
-          <div class="background">
-            <div>
-              <div class="articles">
-                <article>
-                  <figure>
-                    <img
-                      src="img/logo-universidad-tecnologica-de-la-riviera-maya.jpg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UTRM</h2>
-                    <p>
-                      La Universidad Tecnológica de la Riviera Maya (UTRM) es
-                      una institución pública bilingüe ubicada en el estado de
-                      Quintana Roo, más precisamente en ña ciudad de Playa del
-                      Carmen, Esta institución cuenta con instalaciones y
-                      servicios que permiten que sus estudiantes obtengan
-                      beneficios a lo largo de la cursada.
-                      <a href="https://utrivieramaya.edu.mx/"
-                        >Más información</a
-                      >
-                    </p>
-                  </div>
-                </article>
-
-                <article>
-                  <figure>
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyX1KdojAtD6srHC3zR3Qk6gwNOmjdISA-UYrF4Cw1kzhvVDdRZON5uM23_n1meG9QSQ&usqp=CAU"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UQROO</h2>
-                    <p>
-                      La Universidad Autónoma del Estado de Quintana Roo
-                      (UAEQROO) es la principal universidad pública del estado
-                      de Quintana Roo, con sede en la ciudad de Chetumal así
-                      como unidades académicas en la isla de Cozumel, la ciudad
-                      de Playa del Carmen y en Cancún. teniendo más de 16
-                      carreras disponibles en sus campus.
-
-                      <a href="https://www.uqroo.mx/">Más información</a>
-                    </p>
-                  </div>
-                </article>
-
-                <article>
-                  <figure>
-                    <img src="img/logo-unid.jpg" alt="" />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UNID</h2>
-                    <p>
-                      La Universidad Interamericana para el Desarrollo es una
-                      universidad privada mexicana, contando con 50 campuses,
-                      teniendo su precensia en más de la mitad de las entidades
-                      federativas de México. Ofrece 20 licenciaturas y 50
-                      programas educativos de educación media superior y
-                      superior en varias áreas, como negocios, pedalogía y
-                      humanidades, derecho etc.
-
-                      <a
-                        href="https://www.unid.talisis.com/campus/playa-del-carmen"
-                        >Más información</a
-                      >
-                    </p>
-                  </div>
-                </article>
-
-                <article>
-                  <figure>
-                    <img
-                      src="img/logo-riviera1.png"
-                      alt=""
-                      style="background-color: white"
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>Universidad Riviera</h2>
-                    <p>
-                      La Universidad Riviera comienza como iniciativa de un
-                      grupo de empresarios y académicos con amplia experiencia
-                      en la formación educativa que notaron la falta de opciones
-                      educativas de calidad en la región de la Riviera Maya. La
-                      universidad ofrece licenciaturas profesionales de alta
-                      calidad avalados por la secretaria de Educación del Estado
-                      de Quintana Roo; Maestrías y Educación continua.
-
-                      <a href="http://www.universidadriviera.edu.mx/"
-                        >Más información</a
-                      >
-                    </p>
-                  </div>
-                </article>
-
-                <article>
-                  <figure>
-                    <img
-                      src="img/logo-viz.png"
-                      alt=""
-                      style="background-color: white"
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>Universidad Vizcaya</h2>
-                    <p>
-                      La Universidad Vizcaya de las Américas es una Universidad
-                      tipo Privada que tiene como sede en México la Ciudad de
-                      Tepic, Nayarit, además de contar con más de 30 campus
-                      alrededor del País. La Universidad Vizcaya de las Américas
-                      fomenta la educación, la cultura y la investigación
-                      formando profesionales con capacidad de dar a respuesta a
-                      las exigencias actuales.
-                      <a href="https://uva.edu.mx/playadelcarmen/"
-                        >Más información</a
-                      >
-                    </p>
-                  </div>
-                </article>
-                <!--Lo dejo aqui por si quieren poner otra universidad-->
-                <!--
                 <article>
                   <figure>
                     <img
@@ -381,8 +212,13 @@
                       >
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
-              --></div>
+              </div>
             </div>
           </div>
         </div>
@@ -413,7 +249,140 @@
                       <a href="#">Más información</a>
                     </p>
                   </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
                 </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divisor">
+
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-md-12 form-container">
+          <h3>Universidades</h3>
+
+          <div class="background">
+            <div>
+              <div class="articles">
+                <article>
+                  <figure>
+                    <img
+                      src="https://i.pinimg.com/736x/8d/ca/51/8dca51990184060db869655e4f4c0ab5.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="article-preview">
+                    <h2>UTRM</h2>
+                    <p>
+                      La Universidad Tecnológica de la Riviera Maya (UTRM) es
+                      una institución pública bilingüe ubicada en el estado de
+                      Quintana Roo, más precisamente en ña ciudad de Playa del
+                      Carmen, Esta institución cuenta con instalaciones y
+                      servicios que permiten que sus estudiantes obtengan
+                      beneficios a lo largo de la cursada.
+                      <a href="https://utrivieramaya.edu.mx/"
+                        >Más información</a
+                      >
+                    </p>
+                  </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyX1KdojAtD6srHC3zR3Qk6gwNOmjdISA-UYrF4Cw1kzhvVDdRZON5uM23_n1meG9QSQ&usqp=CAU"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="article-preview">
+                    <h2>UQROO</h2>
+                    <p>
+                      La Universidad Autónoma del Estado de Quintana Roo
+                      (UAEQROO) es la principal universidad pública del estado
+                      de Quintana Roo, con sede en la ciudad de Chetumal así
+                      como unidades académicas en la isla de Cozumel, la ciudad
+                      de Playa del Carmen y en Cancún. teniendo más de 16
+                      carreras disponibles en sus campus.
+
+                      <a href="https://www.uqroo.mx/">Más información</a>
+                    </p>
+                  </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure>
+                    <img src="https://i.pinimg.com/736x/db/74/35/db7435b19f8c42bfc1ef6eae23212877.jpg" alt="" />
+                  </figure>
+                  <div class="article-preview">
+                    <h2>UNID</h2>
+                    <p>
+                      La Universidad Interamericana para el Desarrollo es una
+                      universidad privada mexicana, contando con 50 campuses,
+                      teniendo su precensia en más de la mitad de las entidades
+                      federativas de México. Ofrece 20 licenciaturas y 50
+                      programas educativos de educación media superior y
+                      superior en varias áreas, como negocios, pedalogía etc.
+
+                      <a
+                        href="https://www.unid.talisis.com/campus/playa-del-carmen"
+                        >Más información</a
+                      >
+                    </p>
+                  </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
+                </article>
+
+                <article>
+                  <figure>
+                    <img src="https://i.pinimg.com/736x/db/74/35/db7435b19f8c42bfc1ef6eae23212877.jpg" alt="" />
+                  </figure>
+                  <div class="article-preview">
+                    <h2>UNID</h2>
+                    <p>
+                      La Universidad Interamericana para el Desarrollo es una
+                      universidad privada mexicana, contando con 50 campuses,
+                      teniendo su precensia en más de la mitad de las entidades
+                      federativas de México. Ofrece 20 licenciaturas y 50
+                      programas educativos de educación media superior y
+                      superior en varias áreas, como negocios, pedalogía etc.
+
+                      <a
+                        href="https://www.unid.talisis.com/campus/playa-del-carmen"
+                        >Más información</a
+                      >
+                    </p>
+                  </div>
+
+                  <div class="centro_colores_2 ">
+                    <a class="colores2">Únete</a>
+                  </div>
+
+                </article>
+
+
               </div>
             </div>
           </div>
@@ -437,6 +406,11 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white !important; /* Para títulos y párrafos */
 }
 
+
+.logog{
+  justify-content: center;
+  justify-items: auto;
+}
 
 body {
   background: radial-gradient(
@@ -489,6 +463,34 @@ nav {
 .colores {
   text-align: center;
   width: 128px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 3.336px;
+  background: linear-gradient(
+    100deg,
+    #b936f5 -21.45%,
+    #48c57a 100%,
+    #fbf7ff 100%
+  );
+}
+
+
+.divisor{
+    height: 4px; 
+    background: white;
+    margin: 50px 0
+  }
+
+.centro_colores_2 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+
+.colores2 {
+  text-align: center;
+  width: 400px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 3.336px;
