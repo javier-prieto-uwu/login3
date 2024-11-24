@@ -1,32 +1,38 @@
 <template>
-    <div class="register-container">
-      <div class="register-box">
-        <h1 class="title">Create an Account</h1>
-        <div class="form-group">
-          <input 
-            type="text" 
-            placeholder="Email" 
-            v-model="email"
-            class="input-field"
-          />
-        </div>
-        <div class="form-group">
-          <input 
-            type="password" 
-            placeholder="Password" 
-            v-model="password"
-            class="input-field"
-          />
-        </div>
-        <div class="button-group">
-          <button @click="register" class="submit-btn">Submit</button>
-          <button @click="signInWithGoogle" class="google-btn">
-            Sign In With Google
-          </button>
-        </div>
+  <div class="register-container">
+    <img
+      src="https://i.ibb.co/RQjbDdY/image-1.png"
+      alt="Imagen de ejemplo"
+      class="image-full"
+    />
+    <div class="register-box">
+    <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
+      <h1 class="title">Create an Account</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Email"
+          v-model="email"
+          class="input-field"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Password"
+          v-model="password"
+          class="input-field"
+        />
+      </div>
+      <div class="button-group">
+        <button @click="register" class="submit-btn">Submit</button>
+        <button @click="signInWithGoogle" class="google-btn">
+          Sign In With Google
+        </button>
       </div>
     </div>
-  </template>
+  </div>
+</template>
 
 <script setup>
 import { ref } from "vue"
@@ -52,21 +58,28 @@ const register = () => {
 </script>
 
 <style scoped>
+
+
+  .image-full{
+    width: 50%;
+    height: 150%;
+  } 
+
   .register-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     min-height: 100vh;
     padding: 20px;
   }
   
   .register-box {
-    background-color: #650b6d;
+    background-color:black;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    margin: 5rem;
   }
   
   .title {

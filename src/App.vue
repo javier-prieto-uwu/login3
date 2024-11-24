@@ -172,8 +172,8 @@ const handleSignOut = () => {
 }
 
 .content {
-  margin-top: 80px;
-  padding: 2rem;
+  margin-top: 0px;
+  padding: 0;
   flex-grow: 1;
 }
 

@@ -1,6 +1,17 @@
 <template>
-    <div class="signin-container">
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <img src="https://i.ibb.co/RQjbDdY/image-1.png" alt="Imagen de ejemplo" class="image-full">
+      </div>
+      <!-- Columna derecha para contenido -->
+      <div class="col-md-6 d-flex align-items-center">
+       
+
+        <div class="signin-container">
       <div class="signin-box">
+        <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
         <h1 class="title">Sign In to an account</h1>
         <div class="form-group">
           <input 
@@ -29,6 +40,16 @@
         </div>
       </div>
     </div>
+
+
+      </div>
+    </div>
+  </div>   
+
+
+
+
+   
   </template>
   
 <script setup>
@@ -71,6 +92,17 @@ const register = () => {
 
 
 <style scoped>
+
+.col-left {
+  height: 100vh; /* La imagen ocupará toda la altura de la pantalla */
+}
+
+.image-full {
+      width: 200%; 
+      height: 100%; 
+      object-fit: cover;
+    }
+
   .signin-container {
     display: flex;
     justify-content: center;
@@ -80,7 +112,7 @@ const register = () => {
   }
   
   .signin-box {
-    background-color: #650b6d;
+    background-color: black;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -132,12 +164,12 @@ const register = () => {
   }
   
   .submit-btn {
-    background-color: #4a90e2;
+    background-color: purple;
     color: white;
   }
   
   .submit-btn:hover {
-    background-color: #357abd;
+    background-color: gray;
   }
   
   .google-btn {
