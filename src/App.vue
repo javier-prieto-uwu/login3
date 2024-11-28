@@ -1,59 +1,86 @@
 <template>
   <div class="main-container">
-    <nav class="navigation">
-      <div class="nav-links">
-          <router-link to="/" class="nav-link" active-class="active">
-            Home
-          </router-link>
-          <router-link to="/feed" class="nav-link" active-class="active">
-            Feed
-          </router-link>
-          <router-link to="/register" class="nav-link" active-class="active">
-            Register
-          </router-link>
-          <router-link to="/sign-in" class="nav-link" active-class="active">
-            Sign In
-          </router-link>
-          <button @click="handleSignOut" v if="isLoggedIn">Sing out</button>
-      </div>
-    </nav>
+       
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navigation">
+  <div class="container-fluid">
+    <img
+      src="https://i.ibb.co/tZVHKMY/logopeque.png"
+      alt="Logo" class="logonavbar"
+    />
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link" active-class="active">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/feed" class="nav-link" active-class="active">Feed</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/register" class="nav-link colores" active-class="active">Register</router-link>
+        </li>
+        <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <main class="content">
-      <router-view> 
-        
+      <router-view>     
       </router-view>
     </main>
+    
+    <footer class="footer mt-auto">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb-4 -mb-md-0">
+                  <h5>Sobre nosotros:</h5>
+                  <p>
+                    Somos un equipo con nuestra meta de poder unir más a los
+                      estudiantes de las universidades para crear más
+                      oportunidades para ellos, subiendo el nivel de satisfación
+                      en las escuelas, además de tener un sitio general para
+                      recibir noticias sobre la universidad de una forma fácil,
+                      simple y eficiente para los estudiantes y los profesores.
+                  </p>
+              </div>
+                  <div class="col-md-4 mb-4 -mb-md-0">
+                      <h5>Quick links</h5>
+                      <ul class="list-unstyled footer-links">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <h5>Follow us</h5>
+                      <div class="social-icons">
+                          <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                          <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                          <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                          <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+                      </div>
+                  </div>
+          </div>
+      </div>
+      <div class="copyrigth">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <p> &copy; <span id="year"></span> TI31 ALL rigths reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Us</h3>
-          <p>Your platform for connecting and sharing with the community.</p>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/feed">Feed</router-link></li>
-            <li><router-link to="/register">Register</router-link></li>
-            <li><router-link to="/sign-in">Login</router-link></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Contact</h3>
-          <ul>
-            <li>Email: info@yoursite.com</li>
-            <li>Phone: (123) 456-7890</li>
-            <li>Address: Your Location</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-      </div>
-    </footer>
+
+
+
   </div>
 </template>
 
@@ -94,10 +121,28 @@ const handleSignOut = () => {
 </script>
 
 <style>
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; 
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+.logonavbar{
+  max-width: 20%;
 }
 
 #app {
@@ -109,6 +154,7 @@ const handleSignOut = () => {
 }
 
 .main-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

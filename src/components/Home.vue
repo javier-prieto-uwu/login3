@@ -3,38 +3,27 @@
    <div class="container mt-5">
       <div class="row">
         <div class="col-md-6 form-container">
-          <img class="logog" src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
-          <h1>ARCANUM</h1>
-          <h1 class="">FORO ESTUDIANTIL</h1>
-          <!-- Start Form -->
+
+          <a href="https://ibb.co/6vjywRD"><img src="https://i.ibb.co/tZVHKMY/logopeque.png" alt="logopeque" border="0"></a>
+          
           <p class="space">
             Descubre un espacio hecho para ti. Aquí podrás resolver tus dudas y
             potenciar tu conocimiento. Aquí encontrarás respuestas, debates y
             una comunidad lista para ayudarte a crecer.
           </p>
-          <div class="text2">
-            <a> "Donde las ideas se encuentran, el conocimiento crece."</a>
-          </div>
-          <ul class="space">
-            <li>Únete a la comunidad</li>
-            <li>Apoyo comunitario</li>
-            <li>Empieza ahora</li>
-          </ul>
-          <a class="colores" href="">Únete a la comunidad!</a>
+         
+          
         </div>
 
         <div class="col-md-6">
-          <img src="https://i.ibb.co/mBjyxgR/grupo-amigos-haciendo-selfie-clase-1.png" alt="" />
+          <img src="https://i.ibb.co/mBjyxgR/grupo-amigos-haciendo-selfie-clase-1.png" alt="foto de amigos" class="amigosxd" />
           <div class=""></div>
-          <div>
-            <h2>Un foro dinámico, amplía tu comunidad.</h2>
 
-            <a>
-              Nuevas ideas y perspectivas. El apoyo y crecimiento en tu carrera
-              es el primer paso hacia el éxito
-            </a>
-          </div>
         </div>
+
+            <div class="conocimiento"><p>El conocimiento colectivo como la suma de toda la experiencia y sabiduria huamana</p>
+              <a class="colores3" href="/src/components/Register.vue">Únete a la comunidad!</a></div>
+        
       </div>
     </div>
 
@@ -147,7 +136,7 @@
                       educativas de calidad en la región de la Riviera Maya. La
                       universidad ofrece licenciaturas profesionales de alta
                       calidad avalados por la secretaria de Educación del Estado
-                      de Quintana Roo; Maestrías y Educación continua.
+                      de Quintana Roo; Maestrías.
 
                       <a href="http://www.universidadriviera.edu.mx/"
                         >Más información</a
@@ -289,7 +278,7 @@
                     </p>
                     <figure>
                       <img src="img/placeholder.png">
-                      <p class="resenas-nombre">Estudiante</p>
+                      <p class="resenas-nombre">Karlitos M</p>
                       <p>UT</p>
                     </figure>
                   </div>
@@ -313,7 +302,7 @@
                     </p>
                     <figure>
                       <img src="img/placeholder.png">
-                      <p class="resenas-nombre">Estudiante</p>
+                      <p class="resenas-nombre">Angel MTM</p>
                       <p>UQROO</p>
                     </figure>
                   </div>
@@ -335,8 +324,8 @@
                       gracias por ser esa comunidad que me hace sentir menos solo"
                     </p>
                     <figure>
-                      <img src="img/placeholder.png">
-                      <p class="resenas-nombre">Estudiante</p>
+                      <img src="https://i.ibb.co/TKgcR6P/IMG-6173.jpg">
+                      <p class="resenas-nombre">Leonardo</p>
                       <p>UNID</p>
                     </figure>
                   </div>
@@ -345,19 +334,15 @@
 
                 <article>
                   <div class="resenas-comentario">
-                    <h2>Nunca ha sido más fácil comunicarme con todos mis estudiantes</h2>
+                    <h2>Gran aplicación</h2>
                     <p>
-                      "Normalmente, siempre hay un estudiante, 
-                      o dos, que me llegan a clase sin la tarea,
-                      diciendo que no sabían y que no comunique,
-                      pero ya no más, el foro para profesores ayuda
-                      a siempre tener todas las noticias sobre eventos, 
-                      trabajos y exámenes siempre disponibles en un
-                      lugar fácil de acceder.
+                      ¡Arcanum es justo lo que necesitaba como estudiante! Esta aplicación es una herramienta súper útil para quienes queremos conectarnos con otros estudiantes, ya sea para resolver dudas de materias.
+                      Lo que más me gustó es que está organizada por universidades, así que puedo interactuar con compañeros de mi propia institución, pero también con alumnos de otras escuelas.
+
                     </p>
                     <figure>
-                      <img src="img/placeholder.png" >
-                      <p class="resenas-nombre">Profesor</p>
+                      <img src="/src/assets/placeholder.png" >
+                      <p class="resenas-nombre">Matiaswapouwu</p>
                       <p>Riviera</p>
                     </figure> 
                   </div>
@@ -388,6 +373,14 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white !important; /* Para títulos y párrafos */
 }
 
+.amigosxd{
+  margin-top: 100px
+}
+
+.conocimiento{
+  justify-content: center;
+  justify-items: center;
+}
 
 .logog{
   justify-content: center;
@@ -436,6 +429,10 @@ nav {
 
 .dropdown-menu {
   background-color: black !important; /* Falta cerrar este bloque */
+}
+
+.logoG{
+  width:100%;
 }
 
 .dropdown-item:hover {
@@ -535,7 +532,7 @@ h3 {
 }
 
 .space{
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 
