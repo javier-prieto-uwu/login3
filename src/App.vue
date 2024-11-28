@@ -3,11 +3,11 @@
        
     <nav class="navbar navbar-expand-lg bg-body-tertiary navigation">
   <div class="container-fluid">
-    <img
-      src="https://i.ibb.co/tZVHKMY/logopeque.png"
-      alt="Logo" class="logonavbar"
-    />
-    <div class="collapse navbar-collapse">
+    <img src="https://i.ibb.co/tZVHKMY/logopeque.png" alt="Logo" class="logonavbar" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <router-link to="/" class="nav-link" active-class="active">Home</router-link>
@@ -170,6 +170,54 @@ const handleSignOut = () => {
   z-index: 1000;
 }
 
+/* Logo Responsivo */
+.logonavbar {
+  max-width: 15%; /* Reduce el tamaño en móviles */
+}
+
+@media (max-width: 768px) {
+  .logonavbar {
+    max-width: 25%; /* Más pequeño en pantallas intermedias */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Coloca los elementos del menú en una columna */
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navigation {
+    padding: 0.5rem 1rem; /* Reduce el padding de la barra de navegación */
+  }
+
+  .nav-link {
+    padding: 0.8rem; /* Más espacio para clics en pantallas táctiles */
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logonavbar {
+    max-width: 30%; 
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr; 
+    padding: 1rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+    text-align: center; 
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; 
+    margin: 0 0.5rem;
+  }
+}
+
+
 .nav-links {
   display: flex;
   justify-content: center;
@@ -279,6 +327,17 @@ const handleSignOut = () => {
   font-size: 0.9rem;
   color: #aaa;
 }
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  gap: 1rem;
+}
+
+.footer-section {
+  text-align: center; /* Centra los textos */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

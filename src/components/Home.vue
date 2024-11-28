@@ -1,69 +1,98 @@
 <template>
-   <!-- Main container -->
-   <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 form-container">
 
-          <a href="https://ibb.co/6vjywRD"><img src="https://i.ibb.co/tZVHKMY/logopeque.png" alt="logopeque" border="0"></a>
-          
-          <p class="space">
-            Descubre un espacio hecho para ti. Aquí podrás resolver tus dudas y
-            potenciar tu conocimiento. Aquí encontrarás respuestas, debates y
-            una comunidad lista para ayudarte a crecer.
-          </p>
-         
-          
-        </div>
+<div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-12 col-md-6 form-container d-flex flex-column align-items-center">
+        <a href="https://ibb.co/6vjywRD">
+          <img src="https://i.ibb.co/tZVHKMY/logopeque.png" alt="logopeque" class="img-fluid" />
+        </a>
+        <p class="space">
+          Descubre un espacio hecho para ti. Aquí podrás resolver tus dudas y
+          potenciar tu conocimiento. Aquí encontrarás respuestas, debates y
+          una comunidad lista para ayudarte a crecer.
+        </p>
+      </div>
 
-        <div class="col-md-6">
-          <img src="https://i.ibb.co/mBjyxgR/grupo-amigos-haciendo-selfie-clase-1.png" alt="foto de amigos" class="amigosxd" />
-          <div class=""></div>
-
-        </div>
-
-            <div class="conocimiento"><p>El conocimiento colectivo como la suma de toda la experiencia y sabiduria huamana</p>
-              <a class="colores3" href="/src/components/Register.vue">Únete a la comunidad!</a></div>
-        
+      <div class="col-12 col-md-6 text-center">
+        <img src="https://i.ibb.co/mBjyxgR/grupo-amigos-haciendo-selfie-clase-1.png" alt="foto de amigos" class="amigosxd img-fluid" />
       </div>
     </div>
 
-    <hr class="divisor">
+    <div class="conocimiento text-center mt-4">
+      <p>El conocimiento colectivo como la suma de toda la experiencia y sabiduría humana</p>
+      <a class="colores3" href="/src/components/Register.vue">Únete a la comunidad!</a>
+    </div>
+  </div>
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-10 form-container">
-          <h3>Universidades</h3>
+  <hr class="divisor">
 
-          <div class="background">
-            <div>
-              <div class="articles">
-                <article>
-                  <figure>
-                    <img
-                      src="https://i.pinimg.com/736x/8d/ca/51/8dca51990184060db869655e4f4c0ab5.jpg"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>UTRM</h2>
-                    <p>
-                      La Universidad Tecnológica de la Riviera Maya (UTRM) es
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://www.tec.ac.cr/hoyeneltec/sites/default/files/styles/colorbox/public/media/img/main/tecnologia_en_educacion_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://www.tec.ac.cr/hoyeneltec/sites/default/files/styles/colorbox/public/media/img/main/tecnologia_en_educacion_.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2018/08/tecnologia-aulas.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <div class="container mt-5">
+    <h3 class="text-center">Universidades</h3>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <div class="articles d-flex flex-wrap justify-content-center">
+
+          <article>
+            <figure>
+              <img src="https://i.pinimg.com/736x/8d/ca/51/8dca51990184060db869655e4f4c0ab5.jpg" alt="UTRM" />
+            </figure>
+            <div class="article-preview">
+              <h2>UTRM</h2>
+              <p>
+                La Universidad Tecnológica de la Riviera Maya (UTRM) es
                       una institución pública bilingüe ubicada en el estado de
                       Quintana Roo, más precisamente en ña ciudad de Playa del
                       Carmen, Esta institución cuenta con instalaciones y
                       servicios que permiten que sus estudiantes obtengan
                       beneficios a lo largo de la cursada.
-                      <a href="https://utrivieramaya.edu.mx/"
-                        >Más información</a
-                      >
-                    </p>
-                  </div>
+                <a href="https://utrivieramaya.edu.mx/">Más información</a>
+              </p>
+            </div>
+            <div class="centro_colores_2">
+              <a class="colores2">Únete</a>
+            </div>
+          </article>
 
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
-                  </div>
-
-                </article>
 
                 <article>
                   <figure>
@@ -211,62 +240,20 @@
             </div>
           </div>
         </div>
-
-        <div class="col-md-2 form-container">
-          <h3>Sobre nosotros</h3>
-
-          <div class="background2">
-            <div>
-              <div class="articles">
-                <article>
-                  <figure>
-                    <img
-                      src="img/Green Brown Minimalist Shield Hand Logo (1) 1.png"
-                      alt=""
-                    />
-                  </figure>
-                  <div class="article-preview">
-                    <h2>El Equipo (nombre de la página)</h2>
-                    <p>
-                      Somos un equipo con nuestra meta de poder unir más a los
-                      estudiantes de las universidades para crear más
-                      oportunidades para ellos, subiendo el nivel de satisfación
-                      en las escuelas, además de tener un sitio general para
-                      recibir noticias sobre la universidad de una forma fácil,
-                      simple y eficiente para los estudiantes y los profesores.
-
-                      <a href="#">Más información</a>
-                    </p>
-                  </div>
-
-                  <div class="centro_colores_2 ">
-                    <a class="colores2">Únete</a>
-                  </div>
-
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
+        
     <hr class="divisor">
 
 
-    <div>
-      <div class="row">
-        <div class="col-md-12 form-container">
-          <h3>Reseñas</h3>
 
-          <div class="background">
-            <div>
-              <div class="resenas">
-                <article>
-                  <div class="resenas-comentario">
-                    <h2>Tips que no encuentras ni en los apuntes</h2>
-                    <p>
-                      "Gracias a este foro, encontré
+                <div class="container mt-5">
+    <h3 class="text-center">Reseñas</h3>
+    <div class="resenas d-flex flex-wrap justify-content-center">
+      <article class="separacionr">
+        <div class="resenas-comentario">
+          <h2>Tips que no encuentras ni en los apuntes</h2>
+          <p>
+            "Gracias a este foro, encontré
                       genti de mi carrera y de otras
                       que me ha echado la mano en mil
                       cosas. Está súper chido poder
@@ -275,41 +262,19 @@
                       que ya pasaron por lo mismo. Es
                       como tener un equipo en toda la
                       uni"
-                    </p>
-                    <figure>
-                      <img src="img/placeholder.png">
-                      <p class="resenas-nombre">Karlitos M</p>
-                      <p>UT</p>
-                    </figure>
-                  </div>
+          </p>
+          <figure>
+            <img src="img/placeholder.png" alt="Karlitos M" />
+            <p class="resenas-nombre">Karlitos M</p>
+            <p>UT</p>
+          </figure>
+        </div>
+      </article>
 
-                </article>
 
-                <article>
-                  <div class="resenas-comentario">
-                    <h2>Socializo más ahora, conoci gente linda</h2>
-                    <p>
-                      "No sabía cuánto necesitaba un
-                      espacio así hasta que entré. Es
-                      como un grupo de compas que
-                      entienden lo que es estar en la
-                      uni y te tiran paro sin pensarlo.
-                      Aquí he encontrado amigos,
-                      personas genuinas que comparten mis inquietudes y me
-                      hacen sentir acompañado. Me
-                      siento más conectado, y eso no
-                      tiene precio."
-                    </p>
-                    <figure>
-                      <img src="img/placeholder.png">
-                      <p class="resenas-nombre">Angel MTM</p>
-                      <p>UQROO</p>
-                    </figure>
-                  </div>
+               
 
-                </article>
-
-                <article>
+                <article class="separacionr">
                   <div class="resenas-comentario">
                     <h2>Crisis estudiantiles resueltas, gracias a ustedes, comunidad</h2>
                     <p>
@@ -332,7 +297,7 @@
 
                 </article>
 
-                <article>
+                <article class="separacionr">
                   <div class="resenas-comentario">
                     <h2>Gran aplicación</h2>
                     <p>
@@ -352,15 +317,14 @@
 
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
 </template>
 
 <style>
   
+
+
   * {
   color: white !important; /* Fuerza que todos los textos sean blancos */
 }
@@ -371,6 +335,36 @@ a {
 
 p, h1, h2, h3, h4, h5, h6 {
   color: white !important; /* Para títulos y párrafos */
+}
+
+@media (max-width: 768px) {
+  .amigosxd {
+    margin-top: 20px;
+  }
+
+  .space {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .articles article {
+    max-width: 100%; /* Artículos ocupan el ancho completo */
+  }
+
+  .article-preview {
+    padding: 16px; /* Reduce el padding en móviles */
+  }
+
+ 
+  .divisor {
+    margin: 30px 0;
+  }
+}
+
+.separacionr{
+  margin-left: 2em;
+  margin-right: 2rem;
 }
 
 .amigosxd{
@@ -602,37 +596,80 @@ h3 {
   justify-content: center;
 }
 
-/*resena sin ñ para que no haya posibilidad que se cage el programa*/
+
+.resenas {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 24px; /* Agrega espacio entre reseñas */
+  padding: 20px; /* Espaciado interno para evitar cortes */
+}
 
 .resenas article {
   max-width: 320px;
+  width: 100%; /* Asegura que se adapte a móviles */
   display: block;
-  overflow: hidden;
+  overflow: visible; /* Permite que todo el contenido sea visible */
+  border-radius: 8px;
+  background: #1a1a1a; /* Fondo ligeramente diferente para contraste */
 }
 
 .resenas-comentario {
-  padding: 40px;
+  padding: 20px;
+  text-align: left;
 }
 
-.resenas-nombre {
-  color: rgb(252, 57, 57) !important;
+.resenas h2 {
+  font-weight: bold;
+  font-size: 20px; /* Ajusta el tamaño para evitar desbordes */
+  margin-bottom: 15px;
+  color: white;
+}
+
+.resenas p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+.resenas figure {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .resenas figure img {
   height: 50px;
   width: 50px;
-  aspect-ratio: 3/4;
-  overflow: hidden;
-  object-fit: cover;
-  border-radius: 50%;
-  float: left;
-  padding-right: 30px;
+  border-radius: 50%; /* Redondea las fotos */
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
+  margin-right: 15px;
 }
 
-.resenas h2 {
+.resenas-nombre {
+  font-size: 18px;
   font-weight: bold;
-  font-size: 25px;
+  color: #fc3939; /* Resalta el nombre en rojo */
 }
+
+.resenas-nombre + p {
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .resenas article {
+    max-width: 100%; /* Se adapta a la pantalla móvil */
+  }
+
+  .resenas figure img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 
 body{
     font-family: 'poppins', sans-serif;
