@@ -13,9 +13,6 @@
           <router-link to="/" class="nav-link" active-class="active">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/feed" class="nav-link" active-class="active">Feed</router-link>
-        </li>
-        <li class="nav-item">
           <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
         </li>
         <li class="nav-item">
