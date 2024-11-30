@@ -1,12 +1,16 @@
 <template>
-  <div class="register-container">
-    <img
+  <div class="split-left left">
+    <div class="centered-left">
+      <img
       src="https://i.ibb.co/RQjbDdY/image-1.png"
       alt="Imagen de ejemplo"
       class="image-full"
     />
-    <div class="register-box">
-    <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
+    </div>
+  </div>
+  <div class="split-right right">
+    <div class="centered-right">
+      <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
       <h1 class="title">Create an Account</h1>
       <div class="form-group">
         <input
@@ -58,11 +62,57 @@ const register = () => {
 </script>
 
 <style scoped>
+  
+  /*clases que un tutorial de w3 dijo que haga*/
+
+  .split-left {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    padding-top: 20px;
+  }
+
+  .split-right {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .left {
+    left: 0%;
+    overflow: hidden;
+  }
+
+  .right {
+    left: 75%;
+    background-color: #000000;
+  }
+
+  .centered-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .centered-right {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
   .image-full{
-    width: 50%;
-    height: 150%;
+    overflow: hidden;
   } 
 
   .register-container {
@@ -76,7 +126,6 @@ const register = () => {
   .register-box {
     background-color:black;
     padding: 2rem;
-    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 5rem;
