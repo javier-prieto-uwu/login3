@@ -95,13 +95,16 @@ const register = () => {
   }
   
   .input-field {
+    color: black;
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+    background-color: #000000;
     transition: border-color 0.3s ease;
   }
+
   
   .input-field:focus {
     outline: none;
