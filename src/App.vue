@@ -1,146 +1,378 @@
 <template>
   <div class="main-container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link" active-class="active">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/register" class="nav-link" active-class="active">Register</router-link>
-            </li>
-            <li v-if="isLoggedIn" class="nav-item">
-              <button @click="handleSignOut" class="nav-link btn btn-link">Sign Out</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+       
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navigation">
+  <div class="container-fluid">
+    <img src="https://i.ibb.co/tZVHKMY/logopeque.png" alt="Logo" class="logonavbar" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link" active-class="active">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/register" class="nav-link colores" active-class="active">Register</router-link>
+        </li>
+        <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <main class="content">
-      <router-view></router-view>
+      <router-view>     
+      </router-view>
     </main>
-
+    
     <footer class="footer mt-auto">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <h5>Sobre nosotros:</h5>
-            <p>
-              Somos un equipo con nuestra meta de poder unir más a los estudiantes de las universidades para crear más
-              oportunidades para ellos, subiendo el nivel de satisfacción en las escuelas.
-            </p>
+          <div class="row">
+              <div class="col-md-4 mb-4 -mb-md-0">
+                  <h5>Sobre nosotros:</h5>
+                  <p>
+                    Somos un equipo con nuestra meta de poder unir más a los
+                      estudiantes de las universidades para crear más
+                      oportunidades para ellos, subiendo el nivel de satisfación
+                      en las escuelas, además de tener un sitio general para
+                      recibir noticias sobre la universidad de una forma fácil,
+                      simple y eficiente para los estudiantes y los profesores.
+                  </p>
+              </div>
+                  <div class="col-md-4 mb-4 -mb-md-0">
+                      <h5>Quick links</h5>
+                      <ul class="list-unstyled footer-links">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <h5>Follow us</h5>
+                      <div class="social-icons">
+                          <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                          <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                          <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                          <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+                      </div>
+                  </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <h5>Quick links</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Follow us</h5>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
-              <a href="#"><i class="fab fa-twitter social-icon"></i></a>
-              <a href="#"><i class="fab fa-instagram social-icon"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="text-center py-3 bg-dark text-white">
-        <p>&copy; <span id="year"></span> TI31 All rights reserved.</p>
+      <div class="copyrigth">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <p> &copy; <span id="year"></span> TI31 ALL rigths reserved.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </footer>
+  </footer>
+
+
+
+
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth,onAuthStateChanged, signOut } from "firebase/auth";
 
 const router = useRouter();
 const isLoggedIn = ref(false);
-const auth = getAuth();
+
+let auth;
 
 onMounted(() => {
+  auth = getAuth();
   onAuthStateChanged(auth, (user) => {
-    isLoggedIn.value = !!user;
+    if (user) {
+      isLoggedIn.value = true;
+    } else {
+      isLoggedIn.value = false;
+    }
   });
 });
 
-const handleSignOut = async () => {
-  try {
-    await signOut(auth);
-    router.push("/");
-  } catch (error) {
-    console.error("Error signing out:", error);
-  }
-};
+
+const handleSignOut = () => {
+  signOut(auth).then(() =>{
+    router.push("/")
+  });
+}
+
+// export default {
+//   name: 'App',
+//   components: {
+//     RouterView
+//   }
+// }
 </script>
 
 <style>
-body {
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; 
+}
+
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-.navbar {
-  background-color: #343a40;
+
+.logonavbar{
+  max-width: 20%;
 }
 
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #3498db;
+#app {
+  font-family: 'Poppins', Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  min-height: 100vh;
 }
 
 .main-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.navigation {
+  background-color: transparent; /* Fondo transparente */
+  backdrop-filter: blur(5px); /* Desenfoque para dar un efecto de mezcla */
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: none; /* Elimina la sombra */
+}
+
+/* Logo Responsivo */
+.logonavbar {
+  max-width: 15%; /* Reduce el tamaño en móviles */
+}
+
+@media (max-width: 768px) {
+  .logonavbar {
+    max-width: 25%; /* Más pequeño en pantallas intermedias */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Coloca los elementos del menú en una columna */
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navigation {
+    padding: 0.5rem 1rem; /* Reduce el padding de la barra de navegación */
+  }
+
+  .nav-link {
+    padding: 0.8rem; /* Más espacio para clics en pantallas táctiles */
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logonavbar {
+    max-width: 30%; 
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr; 
+    padding: 1rem;
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+    text-align: center; 
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; 
+    margin: 0 0.5rem;
+  }
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.nav-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #1f3645;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.nav-link.active {
+  color: #1d3647;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #152937;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
 .content {
+  margin-top: 0px;
+  padding: 0;
   flex-grow: 1;
-  margin-top: 70px;
 }
 
+/* Footer Styles */
 .footer {
-  background-color: #343a40;
-  color: white;
+  background-color: #650b6d;
+  color: #ffffff;
+  padding-top: 3rem;
+  margin-top: auto;
 }
 
-.footer a {
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: #3498db;
+.footer-section a:hover {
+  color: #192d3a;
+}
+
+.footer-bottom {
+  background-color: #243342;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+  gap: 1rem;
+}
+
+.footer-section {
+  text-align: center; /* Centra los textos */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigation {
+    padding: 0.5rem;
+  }
+
+  .content {
+    margin-top: 120px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
 }
 </style>
