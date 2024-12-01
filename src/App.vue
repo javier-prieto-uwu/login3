@@ -158,13 +158,14 @@ const handleSignOut = () => {
 }
 
 .navigation {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent; /* Fondo transparente */
+  backdrop-filter: blur(5px); /* Desenfoque para dar un efecto de mezcla */
   padding: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  box-shadow: none; /* Elimina la sombra */
 }
 
 /* Logo Responsivo */

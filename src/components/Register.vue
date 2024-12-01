@@ -2,7 +2,7 @@
   <div class="split-left left">
     <div class="centered-left">
       <img
-      src="https://i.ibb.co/RQjbDdY/image-1.png"
+      src="https://i.ibb.co/H79PRsw/Betterimage-ai-1733016196294.jpg"
       alt="Imagen de ejemplo"
       class="image-full"
     />
@@ -62,146 +62,142 @@ const register = () => {
 </script>
 
 <style scoped>
-  
-  /*clases que un tutorial de w3 dijo que haga*/
 
+.split-left, .split-right {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.split-left {
+  width: 75%;
+  left: 0;
+}
+
+.split-right {
+  width: 50%;
+  left: 60%;
+  background: radial-gradient(circle,
+      rgba(98, 0, 121, 1) 0%,
+      rgba(30, 0, 40, 1) 70%,
+      rgba(0, 0, 0, 1) 100%);
+  overflow-x: hidden;
+}
+
+.centered-left, .centered-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered-left {
+  left: 20%;
+}
+
+.centered-right {
+  left: 40%;
+}
+
+.image-full {
+  overflow: hidden;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #000;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submit-btn, .google-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #357abd;
+}
+
+.google-btn {
+  background-color: #fff;
+  color: #757575;
+  border: 1px solid #ddd;
+}
+
+.google-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
   .split-left {
-    height: 100%;
-    width: 75%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    padding-top: 20px;
+    display: none; /* Oculta la sección de la imagen */
   }
 
   .split-right {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-
-  .left {
-    left: 0%;
-    overflow: hidden;
-  }
-
-  .right {
-    left: 75%;
-    background-color: #000000;
-  }
-
-  .centered-left {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    width: 100%; /* Ocupa todo el ancho */
+    left: 0;
+    padding: 20px;
   }
 
   .centered-right {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
     text-align: center;
+    margin: 0 auto;
   }
 
-
-  .image-full{
-    overflow: hidden;
-  } 
-
-  .register-container {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .register-box {
-    background-color:black;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin: 5rem;
-  }
-  
   .title {
-    color: #ffffff;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+    font-size: 1.5rem;
   }
 
   .input-field {
-    color: black;
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     font-size: 1rem;
-    background-color: #000000;
-    transition: border-color 0.3s ease;
+    padding: 0.5rem;
   }
 
-  
-  .input-field:focus {
-    outline: none;
-    border-color: #4a90e2;
-  }
-  
-  .button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  
   .submit-btn, .google-btn {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
+}
+
   
-  .submit-btn {
-    background-color: #4a90e2;
-    color: white;
-  }
-  
-  .submit-btn:hover {
-    background-color: #357abd;
-  }
-  
-  .google-btn {
-    background-color: #fff;
-    color: #757575;
-    border: 1px solid #ddd;
-  }
-  
-  .google-btn:hover {
-    background-color: #f5f5f5;
-  }
   </style>
