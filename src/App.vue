@@ -1,15 +1,7 @@
 <template>
-  <div id="app">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <!-- Logo -->
-        <img
-          src="https://i.ibb.co/tZVHKMY/logopeque.png"
-          alt="Logo"
-          class="navbar-logo d-none d-md-block"
-        />
-        <!-- Botón de despliegue -->
+  <div class="main-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
@@ -21,7 +13,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Menú desplegable -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -33,29 +24,50 @@
             <li class="nav-item">
               <router-link to="/register" class="nav-link" active-class="active">Register</router-link>
             </li>
-            <li class="nav-item" v-if="isLoggedIn">
-              <button class="btn btn-link nav-link" @click="handleSignOut">Sign Out</button>
+            <li v-if="isLoggedIn" class="nav-item">
+              <button @click="handleSignOut" class="nav-link btn btn-link">Sign Out</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <main class="content">
       <router-view></router-view>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer bg-dark text-white mt-auto py-4">
-      <div class="container text-center">
-        <p>&copy; <span id="year"></span> TI31 | All rights reserved.</p>
-        <div class="social-icons">
-          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>Sobre nosotros:</h5>
+            <p>
+              Somos un equipo con nuestra meta de poder unir más a los estudiantes de las universidades para crear más
+              oportunidades para ellos, subiendo el nivel de satisfacción en las escuelas.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+              <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+              <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="text-center py-3 bg-dark text-white">
+        <p>&copy; <span id="year"></span> TI31 All rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -68,70 +80,67 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 
 const router = useRouter();
 const isLoggedIn = ref(false);
-let auth;
+const auth = getAuth();
 
 onMounted(() => {
-  auth = getAuth();
   onAuthStateChanged(auth, (user) => {
     isLoggedIn.value = !!user;
   });
 });
 
-const handleSignOut = () => {
-  signOut(auth).then(() => {
+const handleSignOut = async () => {
+  try {
+    await signOut(auth);
     router.push("/");
-  });
+  } catch (error) {
+    console.error("Error signing out:", error);
+  }
 };
 </script>
 
 <style>
-/* General Reset */
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Navbar */
-.navbar-logo {
-  width: 120px;
-}
-.d-none {
-  display: none !important;
-}
-.d-md-block {
-  display: block !important;
+.navbar {
+  background-color: #343a40;
 }
 
-/* Main Content */
-.main-content {
-  padding-top: 80px; /* Adjust for fixed navbar */
-  min-height: calc(100vh - 160px); /* Adjust for footer height */
+.nav-link {
+  color: white;
 }
 
-/* Footer */
+.nav-link:hover,
+.nav-link.active {
+  color: #3498db;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 70px;
+}
+
 .footer {
   background-color: #343a40;
-  color: #fff;
-  text-align: center;
-}
-.footer .social-icons a {
-  font-size: 1.2rem;
-  margin: 0 0.5rem;
-  transition: color 0.3s;
-}
-.footer .social-icons a:hover {
-  color: #007bff;
+  color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-logo {
-    display: none; /* Ocultar el logo en pantallas pequeñas */
-  }
-  .navbar-nav {
-    flex-direction: column;
-    text-align: center;
-  }
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #3498db;
 }
 </style>
