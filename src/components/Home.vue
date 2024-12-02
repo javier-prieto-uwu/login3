@@ -847,4 +847,31 @@ body {
 .social-icons {
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .space {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .unib {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .divisor {
+    margin: 30px 0;
+  }
+
+  .resenas-comentario {
+    padding: 10px;
+  }
+
+  .resenas-comentario h2 {
+    font-size: 18px;
+  }
+}
+
 </style>
+
