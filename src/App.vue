@@ -47,6 +47,7 @@
       <router-view></router-view>
     </div>
 
+
     <!-- Pie de página -->
     <footer class="footer mt-auto">
       <div class="container">
@@ -115,44 +116,10 @@ const handleSignOut = async () => {
 };
 </script>
 
-
 <style scoped>
 /* Degradado de fondo para toda la página */
-body {
-  background: linear-gradient(
-    180deg,
-    rgba(98, 0, 121, 1) 0%, 
-    rgba(30, 0, 40, 1) 50%, 
-    rgba(0, 0, 0, 1) 100%
-  );
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  color: white !important;
-  font-family: Arial, sans-serif;
-}
 
-/* Contenedor principal */
-.main-container {
-  width: 100%;
-  max-width: 100vw; /* Asegura que no exceda el ancho de la ventana */
-  overflow-x: hidden; /* Evita desbordamientos */
-}
 
-/* Barra de navegación */
-.navbar {
-  width: 100%;
-  margin: 0;
-}
-
-/* Footer */
-.footer {
-  width: 100%; /* Garantiza que no se desborde */
-  max-width: 100vw;
-  padding: 0 1rem;
-  box-sizing: border-box; /* Incluye padding dentro del ancho total */
-}
 
 
 /* Barra de navegación con fondo transparente y color de texto blanco */
@@ -160,6 +127,21 @@ body {
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+.main-container{
+  background: radial-gradient(
+    circle,
+    rgba(98, 0, 121, 1) 0%,
+    rgba(30, 0, 40, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: white !important;
 }
 
 .navbar-toggler-icon {
@@ -192,8 +174,17 @@ body {
 }
 
 /* Contenido principal */
+.main-content {
+  color: white;
+  padding: 50px;
+  min-height: 100vh;
+  margin-top: 0;
+}
 
-
+/* Estilos para el pie de página */
+.footer {
+  color: white;
+}
 
 .footer a {
   color: #ffffff;

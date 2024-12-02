@@ -1,167 +1,259 @@
 <template>
-  <div class="container-fluid p-0 m-0">
-    <div class="row no-gutters">
-      <!-- Columna izquierda con imagen -->
-      <div class="col-6 left-content">
-        <img
-          src="https://i.ibb.co/H79PRsw/Betterimage-ai-1733016196294.jpg"
-          alt="Imagen de ejemplo"
-          class="image-full"
-        />
+
+<div class="main-content">
+
+    
+<div class="container-fluid p-0">
+    <div class="row no-gutters ayudaa">
+      <!-- Sección izquierda con la imagen -->
+      <div class="col-12 col-md-8 izquierda"></div>
+      <!-- Sección derecha con contenido -->
+      <div class="col-12 col-md-4 d-flex align-items-center justify-content-center contenido">
+        <div>
+
+
+          <div class="signin-box">
+        <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
+        <h1 class="title">Register an account</h1>
+        <div class="form-group">
+          <input 
+            type="text" 
+            placeholder="Email" 
+            v-model="email"
+            class="input-field"
+          />
+        </div>
+        <div class="form-group">
+          <input 
+            type="password" 
+            placeholder="Password" 
+            v-model="password"
+            class="input-field"
+          />
+          <div>
+            <p v if="errMsg"> {{ errMsj }} </p>
+          </div>
+        </div>
+        <div class="button-group">
+          <button @click="register" class="submit-btn">Submit</button>
+          <button @click="signInWithGoogle" class="google-btn">
+            Sign In With Google
+          </button>
+        </div>
       </div>
 
-      <!-- Columna derecha con contenido de registro -->
-      <div class="col-6 right-content d-flex align-items-center justify-content-center">
-        <div class="signin-box">
-          <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="Logo" class="logo">
-          <h1 class="title">Create an Account</h1>
-          <div class="form-group">
-            <input
-              type="text"
-              placeholder="Email"
-              v-model="email"
-              class="input-field"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="password"
-              placeholder="Password"
-              v-model="password"
-              class="input-field"
-            />
-          </div>
-          <div class="button-group">
-            <button @click="register" class="submit-btn">Submit</button>
-          </div>
+      
         </div>
       </div>
     </div>
   </div>
+
+
+
+    </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { useRouter } from "vue-router";
+import { ref } from "vue"
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
+import { useRouter } from "vue-router"; //IMPORT ROUTER
 
 const email = ref("");
 const password = ref("");
-const router = useRouter();
+const router = useRouter() //get a reference to our router
 
 const register = () => {
-  const auth = getAuth();
-  createUserWithEmailAndPassword(auth, email.value, password.value)
+    const auth = getAuth(); //from firebase / auth
+    createUserWithEmailAndPassword(auth, email.value, password.value)
     .then(() => {
-      console.log("Successfully registered");
-      router.push("/Feed");
+        console.log ("Successfully registered")
+        router.push('/Feed'); //redireccionar a feed
     })
-    .catch((error) => {
-      console.error("Error during registration:", error.message);
-    });
-};
+    .catch ((error) => {
+        console.log(error.code);
+    })
+}
+
+// Esto redirige al inicio (ruta de login o signin) cuando se recarga la página
+if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+  // Redirige a la página de inicio de sesión
+  window.location.href = '/';
+}
+
+
 </script>
+
+
 
 <style scoped>
 
-body {
-  background: radial-gradient(
-    circle,
-    rgba(98, 0, 121, 1) 0%,
-    rgba(30, 0, 40, 1) 70%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+.main-content {
+  color: white;
+  padding: 50px;
+  min-height: 100vh;
+  margin-top: -75px;
+  margin-left: -200PX;
+  margin-right: 200px;
+}
+
+.izquierda {
+  background-image: url('https://i.ibb.co/H79PRsw/Betterimage-ai-1733016196294.jpg'); /* Imagen de ejemplo */
+  background-size: cover;  /* La imagen cubre todo el área de la columna */
+  background-position: center;  /* Centra la imagen */
+  height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+}
+
+@media (max-width: 768px) {
+  .izquierda {
+    display: none; /* Oculta la imagen */
+  }
+}
+
+.contenido{
+  background-color: #000000;
+}
+
+body, html {
   margin: 0;
   padding: 0;
-  color: white !important;
-  /* Forzar texto blanco */
-}
-
-/* General container settings */
-.container-fluid {
-  width: 100%;
-  height: 100vh;
-}
-
-/* Column for the left side (image) */
-.left-content {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.image-full {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-color: #f0f2f5; /* O el color de fondo que desees */
 }
 
-/* Column for the right side (form) */
-.right-content {
-  background-color: black;
+.signin-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .signin-box {
-  background-color: #1a1a1a;
-  padding: 2rem;
-  border-radius: 8px;
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.logo {
-  max-width: 100px;
-  margin-bottom: 1.5rem;
-}
-
-.title {
-  color: white;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.form-group {
-  margin-bottom: 1rem;
+.signin-box img {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
 .input-field {
   width: 100%;
-  padding: 0.75rem;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #333;
-  color: white;
 }
 
-.input-field:focus {
-  border-color: #4a90e2;
-  outline: none;
-}
-
-.button-group {
-  margin-top: 1.5rem;
-}
 
 .submit-btn {
-  background-color: purple;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
   color: white;
-  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #db4437;
+  color: white;
   border: none;
   border-radius: 4px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .left-content {
-    display: none;
-  }
-
-  .right-content {
-    width: 100%;
-  }
+.col-left {
+  height: 100vh; /* La imagen ocupará toda la altura de la pantalla */
 }
-</style>
+
+.image-full {
+      width: 200%; 
+      height: 100%; 
+      object-fit: cover;
+    }
+
+  .signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .signin-box {
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    color: black;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: wheat;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .submit-btn, .google-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn {
+    background-color: purple;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background-color: gray;
+  }
+  
+  .google-btn {
+    background-color: #fff;
+    color: #757575;
+    border: 1px solid #ddd;
+  }
+  
+  .google-btn:hover {
+    background-color: #f5f5f5;
+  }
+  </style>

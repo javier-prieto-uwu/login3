@@ -1,16 +1,18 @@
 <template>
 
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 d-flex align-items-center justify-content-center">
-        <img src="https://i.ibb.co/RQjbDdY/image-1.png" alt="Imagen de ejemplo" class="image-full">
-      </div>
-      <!-- Columna derecha para contenido -->
-      <div class="col-md-6 d-flex align-items-center">
-       
+<div class="main-content">
 
-        <div class="signin-container">
-      <div class="signin-box">
+    
+<div class="container-fluid p-0">
+    <div class="row no-gutters ayudaa">
+      <!-- Sección izquierda con la imagen -->
+      <div class="col-12 col-md-8 izquierda"></div>
+      <!-- Sección derecha con contenido -->
+      <div class="col-12 col-md-4 d-flex align-items-center justify-content-center contenido">
+        <div>
+
+
+          <div class="signin-box">
         <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
         <h1 class="title">Sign In to an account</h1>
         <div class="form-group">
@@ -39,16 +41,16 @@
           </button>
         </div>
       </div>
-    </div>
 
-
+      
+        </div>
       </div>
     </div>
-  </div>   
+  </div>
 
 
 
-
+    </div>
    
   </template>
   
@@ -88,10 +90,95 @@ const register = () => {
     })
 }
 
+// Esto redirige al inicio (ruta de login o signin) cuando se recarga la página
+if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+  // Redirige a la página de inicio de sesión
+  window.location.href = '/';
+}
+
 </script>
 
 
-<style>
+<style scoped>
+
+.main-content {
+  color: white;
+  padding: 50px;
+  min-height: 100vh;
+  margin-top: -75px;
+  margin-left: -200PX;
+  margin-right: 200px;
+}
+
+.izquierda {
+  background-image: url('https://i.ibb.co/H79PRsw/Betterimage-ai-1733016196294.jpg'); /* Imagen de ejemplo */
+  background-size: cover;  /* La imagen cubre todo el área de la columna */
+  background-position: center;  /* Centra la imagen */
+  height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+}
+
+@media (max-width: 768px) {
+  .izquierda {
+    display: none; /* Oculta la imagen */
+  }
+}
+
+.contenido{
+  background-color: #000000;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f2f5; /* O el color de fondo que desees */
+}
+
+.signin-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signin-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signin-box img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
 
 .col-left {
   height: 100vh; /* La imagen ocupará toda la altura de la pantalla */
@@ -139,7 +226,7 @@ const register = () => {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-    background-color: #000000;
+    background-color: wheat;
     transition: border-color 0.3s ease;
   }
   
