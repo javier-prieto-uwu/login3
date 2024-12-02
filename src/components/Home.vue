@@ -854,6 +854,7 @@ body {
     margin-bottom: 30px;
     text-align: center;
   }
+  
 
   .unib {
     width: 100% !important;
