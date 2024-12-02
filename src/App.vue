@@ -145,6 +145,7 @@ const handleSignOut = async () => {
 }
 
 .navbar-toggler-icon {
+  color: #ffffff;
   filter: invert(1);
 }
 
