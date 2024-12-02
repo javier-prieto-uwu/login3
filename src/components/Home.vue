@@ -26,7 +26,7 @@
       <!-- Columna Derecha -->
       <div class="col-12 col-md-6">
         <div class="row">
-          <p>Cientos de opciones donde escoger</p>
+          <p class="espaciounete">Cientos de opciones donde escoger</p>
           <div class="col-6 mb-3">
             <img
               src="https://i.ibb.co/938c8Nk/image-26.png"
@@ -118,7 +118,7 @@
   <hr class="divisor" />
 
   <div class="container mt-5">
-    <h3 class="text-center">Universidades</h3>
+    <h3 class="text-center unig">Universidades</h3>
     <div class="row justify-content-center">
       <div class="col-12 col-md-10">
         <div class="articles d-flex flex-wrap justify-content-center">
@@ -298,7 +298,7 @@
             pasaron por lo mismo. Es como tener un equipo en toda la uni"
           </p>
           <figure>
-            <img src="https://labs.engineering.asu.edu/trek-demo/wp-content/uploads/sites/2/2018/12/Data_Vertical-400x400.jpg" alt="Karlitos M" />
+            <img class="usuari" src="https://labs.engineering.asu.edu/trek-demo/wp-content/uploads/sites/2/2018/12/Data_Vertical-400x400.jpg" alt="Karlitos M" />
             <div class="resenas-detalle">
               <p class="resenas-nombre">Karlitos M</p>
               <p class="resenas-universidad">UT</p>
@@ -318,7 +318,7 @@
             me hace sentir menos solo"
           </p>
           <figure>
-            <img src="https://i.ibb.co/TKgcR6P/IMG-6173.jpg" />
+            <img class="usuari" src="https://i.ibb.co/TKgcR6P/IMG-6173.jpg" />
             <div class="resenas-detalle">
               <p class="resenas-nombre">Leonardo</p>
               <p class="resenas-universidad">UNID</p>
@@ -339,7 +339,7 @@
             con alumnos de otras escuelas.
           </p>
           <figure>
-            <img src="https://i.pinimg.com/564x/5b/95/ca/5b95cad44cc9e5db24226e3bdb4690e6.jpg" />
+            <img class="usuari" src="https://i.pinimg.com/564x/5b/95/ca/5b95cad44cc9e5db24226e3bdb4690e6.jpg" />
             <div class="resenas-detalle">
               <p class="resenas-nombre">Matiaswapouwu</p>
               <p class="resenas-universidad">TUP</p>
@@ -582,7 +582,7 @@ h3 {
   color: #fff;
   text-align: center;
   font-family: "Roboto Serif";
-  font-size: 55px !important;
+  font-size: 55px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -874,6 +874,67 @@ body {
     font-size: 18px;
   }
 }
+
+@media (max-width: 768px) {
+  .form-container {
+    align-items: center !important; /* Centra los elementos de la columna izquierda */
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: -80px;
+  }
+
+  ul{
+  list-style-type: none; /* Quita los puntos */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Opcional: elimina el margen predeterminado */
+  align-items: center;
+}
+
+.espaciounete{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+  .colores3 {
+    width: auto; /* Ajusta el ancho dinámicamente */
+    margin: auto; /* Centra el botón */
+  }
+
+  h3{
+    width: auto;
+    margin: auto;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+  }
+
+  .usuari{
+    margin: 0px;
+  }
+
+  .row img {
+    margin: 0 auto; /* Centra las imágenes de la columna derecha */
+  }
+
+  .articles {
+    justify-content: center !important; /* Centra los artículos */
+  }
+
+  .articles article {
+    margin: 10px 0; /* Añade separación entre artículos */
+  }
+
+  .article-preview {
+    text-align: center; /* Centra el texto dentro de los artículos */
+  }
+
+  figure img {
+    margin: 0 auto; /* Centra imágenes de las reseñas */
+    display: block;
+  }
+
+  
+
+}
+
 
 </style>
 
