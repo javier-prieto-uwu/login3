@@ -809,6 +809,7 @@ body {
 }
 
 .footer a {
+  
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
