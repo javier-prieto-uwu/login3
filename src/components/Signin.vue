@@ -91,7 +91,7 @@ const register = () => {
 </script>
 
 
-<style scoped>
+<style>
 
 .col-left {
   height: 100vh; /* La imagen ocupará toda la altura de la pantalla */
