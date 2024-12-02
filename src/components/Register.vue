@@ -58,7 +58,8 @@ import { ref } from "vue"
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import { useRouter } from "vue-router"; //IMPORT ROUTER
 
-const email = ref("");
+const email = ref(""); 
+
 const password = ref("");
 const router = useRouter() //get a reference to our router
 
