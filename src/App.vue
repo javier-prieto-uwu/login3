@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">Arcanum</a>
+        <a class="navbar-brand" href="/">Arcanum</a>
 
         <!-- Botón hamburguesa -->
         <button
