@@ -228,7 +228,7 @@ body, html {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-    background-color: wheat;
+    background-color: rgb(200, 145, 252);
     transition: border-color 0.3s ease;
   }
   
