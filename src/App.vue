@@ -120,12 +120,7 @@ const handleSignOut = async () => {
 </script>
 
 <style scoped>
-/* Degradado de fondo para toda la página */
 
-
-
-
-/* Barra de navegación con fondo transparente y color de texto blanco */
 .custom-navbar {
   background: transparent;
   border: none;
