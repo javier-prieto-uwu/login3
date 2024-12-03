@@ -127,7 +127,7 @@ onMounted(() => {
 }
 
 .contenido{
-  background-color: #000000;
+  background-color: #fa0000;
 }
 
 body, html {
