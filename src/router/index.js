@@ -14,13 +14,9 @@ const router = createRouter({
         requiresAuth: true,
       },
     },
+    { path: "/about", component: () => import("../components/about.vue") }, // Corrigiendo el nombre a 'About.vue'
+    { path: "/contact", component: () => import("../components/contact.vue") }, // Corrigiendo el nombre a 'Contact.vue'
   ],
-  // Agregar la función scrollBehavior aquí
-  scrollBehavior(to) {
-    if (to.path === '/register') {
-      return { top: 0 }; // Esto asegura que al navegar a /register se hace scroll al inicio de la página
-    }
-  }
 });
 
 router.beforeEach(async (to, from, next) => {

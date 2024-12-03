@@ -14,6 +14,7 @@
                 <input 
                   type="text" 
                   placeholder="Email" 
+                  
                   v-model="email"
                   class="input-field"
                 />

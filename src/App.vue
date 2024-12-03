@@ -31,8 +31,12 @@
             <li class="nav-item">
               <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
             </li>
+            <li> <router-link to="/about" class="nav-link" active-class="active">nosotros</router-link></li>
             <li class="nav-item">
               <router-link to="/register" class="nav-link" active-class="active">Register</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/contact" class="nav-link" active-class="active">Contacto</router-link>
             </li>
             <li v-if="isLoggedIn" class="nav-item">
               <button @click="handleSignOut" class="nav-link btn btn-link">Sign Out</button>
@@ -63,7 +67,7 @@
             <h5>Quick links</h5>
             <ul class="list-unstyled footer-links">
               <li><router-link to="/">Home</router-link></li>
-              <li><router-link to="https://x.com/ArcanumForum">Contact</router-link></li>
+              <li><router-link to="/about">nosotros</router-link></li>
               <li><router-link to="/">Services</router-link></li>
               <li><router-link to="https://api.whatsapp.com/send?phone=5219841288446&text=Arcanum">Whatsapp</router-link></li>
             </ul>
