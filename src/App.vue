@@ -24,6 +24,7 @@
           :class="{ show: isMenuOpen }"
           id="navbarNav"
         >
+        
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <router-link to="/" class="nav-link" active-class="active">Inicio</router-link>
