@@ -34,6 +34,7 @@
             </li>
             <li> <router-link to="/about" class="nav-link" active-class="active">Nosotros</router-link></li>
             <li class="nav-item">
+              
               <router-link to="/contact" class="nav-link" active-class="active">Contacto</router-link>
             </li>
             <li class="nav-item">
