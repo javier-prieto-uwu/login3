@@ -55,7 +55,7 @@
           <div class="col-md-4 mb-4">
             <h5>Sobre nosotros:</h5>
             <p>
-              Somos un equipo con nuestra meta de poder unir más a los estudiantes de las universidades para crear más
+              Somos un gran equipo cuya meta es poder unir más a los estudiantes de las universidades para crear más
               oportunidades para ellos, subiendo el nivel de satisfacción en las escuelas.
             </p>
           </div>
@@ -63,18 +63,17 @@
             <h5>Quick links</h5>
             <ul class="list-unstyled footer-links">
               <li><router-link to="/">Home</router-link></li>
-              <li><router-link to="#">About us</router-link></li>
-              <li><router-link to="#">Services</router-link></li>
-              <li><router-link to="#">Contact</router-link></li>
+              <li><router-link to="https://x.com/ArcanumForum">Contact</router-link></li>
+              <li><router-link to="/">Services</router-link></li>
+              <li><router-link to="https://api.whatsapp.com/send?phone=5219841288446&text=Arcanum">Whatsapp</router-link></li>
             </ul>
           </div>
           <div class="col-md-4">
             <h5>Follow us</h5>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
-              <a href="#"><i class="fab fa-twitter social-icon"></i></a>
-              <a href="#"><i class="fab fa-instagram social-icon"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61569635303347"><i class="fab fa-facebook-f social-icon"></i></a>
+              <a href="https://x.com/ArcanumForum"><i class="fab fa-twitter social-icon"></i></a>
+              <a href="https://www.instagram.com/arcanum_forum/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram social-icon"></i></a>
             </div>
           </div>
         </div>

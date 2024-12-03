@@ -13,7 +13,7 @@
           />
         </a>
         <p class="space">
-          Descubre un espacio hecho para ti. Aquí podrás resolver tus dudas y
+          Descubre un espacio hecho para tí. Aquí podrás resolver tus dudas y
           potenciar tu conocimiento. Aquí encontrarás respuestas, debates y una
           comunidad lista para ayudarte a crecer.
         </p>
@@ -26,7 +26,7 @@
       <!-- Columna Derecha -->
       <div class="col-12 col-md-6">
         <div class="row">
-          <p class="espaciounete">Cientos de opciones donde escoger</p>
+          <p class="espaciounete">Cientos de opciones dónde escoger:</p>
           <div class="col-6 mb-3">
             <img
               src="https://i.ibb.co/938c8Nk/image-26.png"
@@ -134,7 +134,7 @@
               <p>
                 La Universidad Tecnológica de la Riviera Maya (UTRM) es una
                 institución pública bilingüe ubicada en el estado de Quintana
-                Roo, más precisamente en la ciudad de Playa del Carmen, Esta
+                Roo, más precisamente en la ciudad de Playa del Carmen. Ésta
                 institución cuenta con instalaciones y servicios que permiten
                 que sus estudiantes obtengan beneficios a lo largo de la
                 cursada.
@@ -159,8 +159,8 @@
               <p>
                 La Universidad Autónoma del Estado de Quintana Roo (UAEQROO) es
                 la principal universidad pública del estado de Quintana Roo, con
-                sede en la ciudad de Chetumal así como unidades académicas en la
-                isla de Cozumel, la ciudad de Playa del Carmen y en Cancún.
+                sede en la ciudad de Chetumal, así como unidades académicas en la
+                Isla de Cozumel, la ciudad de Playa del Carmen y en Cancún,
                 teniendo más de 16 carreras disponibles en sus campus.
 
                 <a href="https://www.uqroo.mx/">Más información</a>
@@ -184,9 +184,9 @@
               <p>
                 La Universidad Interamericana para el Desarrollo es una
                 universidad privada mexicana, contando con 50 campuses, teniendo
-                su precencia en más de la mitad de las entidades federativas de
+                su presencia en más de la mitad de las entidades federativas de
                 México. Ofrece 20 licenciaturas y 50 programas educativos de
-                educación media superior y superior en varias áreas, como
+                educación media superior en varias áreas, como
                 negocios, pedalogía etc.
 
                 <a href="https://www.unid.talisis.com/campus/playa-del-carmen"
@@ -216,7 +216,7 @@
                 educativa que notaron la falta de opciones educativas de calidad
                 en la región de la Riviera Maya. La universidad ofrece
                 licenciaturas profesionales de alta calidad avalados por la
-                secretaria de Educación del Estado de Quintana Roo; Maestrías.
+                Secretaría de Educación del Estado de Quintana Roo; Maestrías.
 
                 <a href="http://www.universidadriviera.edu.mx/"
                   >Más información</a
@@ -245,7 +245,7 @@
                 Nayarit, además de contar con más de 30 campus alrededor del
                 País. La Universidad Vizcaya de las Américas fomenta la
                 educación, la cultura y la investigación formando profesionales
-                con capacidad de dar a respuesta a las exigencias actuales.
+                con capacidad de dar la respuesta a las exigencias actuales.
                 <a href="https://uva.edu.mx/playadelcarmen/">Más información</a>
               </p>
             </div>
@@ -264,7 +264,7 @@
             <div class="article-preview">
               <h2>Tec. Universitario</h2>
               <p>
-                parte de un Grupo Universitario con Campus en la Cd. De México,
+                Parte de un Grupo Universitario con Campus en la Cd. De México,
                 Estado de México, Playa del Carmen y Aguascalientes. Este grupo
                 inició operaciones en el año 2014 ante la creciente demanda de
                 la población por una educación de calidad a un precio accesible
@@ -291,12 +291,12 @@
     <div class="resenas d-flex flex-wrap justify-content-center">
       <article class="separacionr">
         <div class="resenas-comentario">
-          <h2>Tips que no encuentras ni en los apuntes</h2>
+          <h2>Tips que no encuentras ni en los apuntes.</h2>
           <p>
-            "Gracias a este foro, encontré genti de mi carrera y de otras que me
-            ha echado la mano en mil cosas. Está súper chido poder preguntar
+            "Gracias a este foro, encontré gente de mi carrera y de otras que me
+            han echado la mano en mil cosas. Está súper chido poder preguntar
             cualquier duda y recibir respuestas de otros estudiantes que ya
-            pasaron por lo mismo. Es como tener un equipo en toda la uni"
+            pasaron por lo mismo. Es como tener un equipo en toda la uni."
           </p>
           <figure>
             <img class="usuari" src="https://labs.engineering.asu.edu/trek-demo/wp-content/uploads/sites/2/2018/12/Data_Vertical-400x400.jpg" alt="Karlitos M" />
@@ -310,13 +310,13 @@
 
       <article class="separacionr">
         <div class="resenas-comentario">
-          <h2>Crisis estudiantiles resueltas, gracias a ustedes, comunidad</h2>
+          <h2>Crisis estudiantiles resueltas gracias a ustedes. </h2>
           <p>
             "Nunca pensé que un foro podría ayudarme tanto en esos momentos de
             estrés, siempre alguien aparece con un consejo o una explicación que
             me calma. Es cool saber que hay personas dispuestas a ayudar sin
             esperar nada a cambio. De verdad, gracias por ser esa comunidad que
-            me hace sentir menos solo"
+            me hace sentir menos solo."
           </p>
           <figure>
             <img class="usuari" src="https://i.ibb.co/TKgcR6P/IMG-6173.jpg" />
@@ -330,12 +330,12 @@
 
       <article class="separacionr">
         <div class="resenas-comentario">
-          <h2>Gran aplicación</h2>
+          <h2>Gran aplicación.</h2>
           <p>
             ¡Arcanum es justo lo que necesitaba como estudiante! Esta aplicación
             es una herramienta súper útil para quienes queremos conectarnos con
             otros estudiantes, ya sea para resolver dudas de materias. Lo que
-            más me gustó es que está oranizada por universidades, así que puedo
+            más me gustó es que está organizada por universidades, así que puedo
             interactuar con compañeros de mi propia institución, pero también
             con alumnos de otras escuelas.
           </p>
