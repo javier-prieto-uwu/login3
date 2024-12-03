@@ -301,7 +301,7 @@
           <figure>
             <img class="usuari" src="https://labs.engineering.asu.edu/trek-demo/wp-content/uploads/sites/2/2018/12/Data_Vertical-400x400.jpg" alt="Karlitos M" />
             <div class="resenas-detalle">
-              <p class="resenas-nombre">Karlitos M</p>
+              <p class="resenas-nombre">Karlitos Muñoz</p>
               <p class="resenas-universidad">UT</p>
             </div>
           </figure>
@@ -321,7 +321,7 @@
           <figure>
             <img class="usuari" src="https://i.ibb.co/TKgcR6P/IMG-6173.jpg" />
             <div class="resenas-detalle">
-              <p class="resenas-nombre">Leonardo</p>
+              <p class="resenas-nombre">Leonardo666</p>
               <p class="resenas-universidad">UNID</p>
             </div>
           </figure>
@@ -338,6 +338,7 @@
             más me gustó es que está organizada por universidades, así que puedo
             interactuar con compañeros de mi propia institución, pero también
             con alumnos de otras escuelas.
+
           </p>
           <figure>
             <img class="usuari" src="https://i.pinimg.com/564x/5b/95/ca/5b95cad44cc9e5db24226e3bdb4690e6.jpg" />
