@@ -21,7 +21,7 @@
           <li>Apoyo comunitario</li>
           <li>Empieza ahora</li>
         </ul>
-        <p class="colores3 mt-3">¡Únete a la comunidad!</p>
+        <a class="colores3 mt-3" href="/register">¡Únete a la comunidad!</a>
       </div>
       <!-- Columna Derecha -->
       <div class="col-12 col-md-6">
@@ -142,7 +142,7 @@
               </p>
             </div>
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
 
@@ -167,7 +167,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
 
@@ -195,7 +195,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
 
@@ -224,7 +224,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
 
@@ -250,7 +250,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
           <article>
@@ -275,7 +275,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2">Únete</a>
+              <a class="colores2" href="/register">Únete</a>
             </div>
           </article>
         </div>
