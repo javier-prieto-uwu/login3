@@ -261,12 +261,12 @@ body, html {
   }
   
   .submit-btn:hover {
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
   }
   
   .google-btn {
     background-color: #000000;
-    color: #757575;
+    color: #000000;
     border: 1px solid #ddd;
   }
   
