@@ -123,6 +123,16 @@ onMounted(() => {
 @media (max-width: 768px) {
   .izquierda {
     display: none; /* Oculta la imagen */
+    
+    .main-content {
+  color: white;
+  padding: 5px;
+  min-height: 100vh;
+  margin-top: -75px;
+  margin-left: -100PX;
+  margin-right: 100px;
+}
+
   }
 }
 
@@ -230,7 +240,7 @@ body, html {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
-    background-color: rgb(200, 145, 252);
+    background-color: black;
     transition: border-color 0.3s ease;
   }
   
