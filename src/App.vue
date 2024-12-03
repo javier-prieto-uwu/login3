@@ -167,6 +167,7 @@ const handleSignOut = async () => {
   border-bottom: 1px solid #6c3483;
 }
 
+
 .navbar-nav .nav-link:last-child {
   border-bottom: none;
 }

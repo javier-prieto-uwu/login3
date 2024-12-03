@@ -797,6 +797,7 @@ body {
 .footer-links li {
   margin-bottom: 10px;
   transition: transform 0.3s ease;
+  
 }
 
 .footer-links li:hover {

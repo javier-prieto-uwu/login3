@@ -40,6 +40,7 @@ const getCurrentUser = () => {
       (user) => {
         removeListener();
         resolve(user);
+        
       },
       reject
     );

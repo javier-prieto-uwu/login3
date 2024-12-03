@@ -11,11 +11,13 @@
         </p>
       </div>
       <div class="photo-gallery">
+
         <div class="photo-item"><img src="https://i.ibb.co/MCfwf0v/3.png" alt="Foto 1" /></div>
         <div class="photo-item"><img src="https://i.ibb.co/FWYGJg4/4.png" alt="Foto 2" /></div>
         <div class="photo-item"><img src="https://i.ibb.co/72LtcmB/2.png" alt="Foto 3" /></div>
         <div class="photo-item"><img src="https://i.ibb.co/tQfLn9x/1.png" alt="Foto 4" /></div>
         <div class="photo-item"><img src="https://i.ibb.co/jhN2st2/5.png" alt="Foto 5" /></div>
+        
       </div>
     </div>
   </template>
