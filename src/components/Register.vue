@@ -137,6 +137,7 @@ body, html {
   background-color: #f0f2f5; /* O el color de fondo que desees */
 }
 
+
 .signin-container {
   background-color: #ffffff;
   border-radius: 8px;
