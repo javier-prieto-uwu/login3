@@ -1,47 +1,53 @@
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import {  createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
-    history:createWebHistory(),
-    routes: [
-        {path:"/" , component: () => import("../components/Home.vue")},
-        {path:"/register" , component: () =>import("../components/Register.vue")},
-        {path:"/sign-in" , component: () => import("../components/Signin.vue")},    
-        {
-            path:"/feed" , 
-            component: () =>import("../components/Feed.vue"),
-            meta: {
-                requiresAuth: true,
-            },
-        },
-    ]
+  history: createWebHistory(),
+  routes: [
+    { path: "/", component: () => import("../components/Home.vue") },
+    { path: "/register", component: () => import("../components/Register.vue") },
+    { path: "/sign-in", component: () => import("../components/Signin.vue") },
+    {
+      path: "/feed",
+      component: () => import("../components/Feed.vue"),
+      meta: {
+        requiresAuth: true,
+      },
+    },
+  ],
+  // Agregar la función scrollBehavior aquí
+  scrollBehavior(to) {
+    if (to.path === '/register') {
+      return { top: 0 }; // Esto asegura que al navegar a /register se hace scroll al inicio de la página
+    }
+  }
 });
 
 router.beforeEach(async (to, from, next) => {
-    if (to.matched.some((record) => record.meta.requiresAuth)) {
-      const user = await getCurrentUser();
-      if (user) {
-        next();
-      } else {
-        alert("You don't have access!");
-        next("/sign-in");
-      }
-    } else {
+  if (to.matched.some((record) => record.meta.requiresAuth)) {
+    const user = await getCurrentUser();
+    if (user) {
       next();
+    } else {
+      alert("You don't have access!");
+      next("/sign-in");
     }
-  });
-  
+  } else {
+    next();
+  }
+});
+
 const getCurrentUser = () => {
-    return new Promise((resolve,reject) => {
-        const removeListener = onAuthStateChanged(
-            getAuth(),
-            (user) => {
-                removeListener();
-                resolve(user);
-            },
-            reject
-        )
-    });
+  return new Promise((resolve, reject) => {
+    const removeListener = onAuthStateChanged(
+      getAuth(),
+      (user) => {
+        removeListener();
+        resolve(user);
+      },
+      reject
+    );
+  });
 };
 
 export default router;

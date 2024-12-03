@@ -21,7 +21,7 @@
           <li>Apoyo comunitario</li>
           <li>Empieza ahora</li>
         </ul>
-        <a class="colores3 mt-3" href="/register">¡Únete a la comunidad!</a>
+        <a class="colores3 mt-3" href="#" @click.prevent="goToRegister">¡Únete a la comunidad!</a>
       </div>
       <!-- Columna Derecha -->
       <div class="col-12 col-md-6">
@@ -134,7 +134,7 @@
               <p>
                 La Universidad Tecnológica de la Riviera Maya (UTRM) es una
                 institución pública bilingüe ubicada en el estado de Quintana
-                Roo, más precisamente en ña ciudad de Playa del Carmen, Esta
+                Roo, más precisamente en la ciudad de Playa del Carmen, Esta
                 institución cuenta con instalaciones y servicios que permiten
                 que sus estudiantes obtengan beneficios a lo largo de la
                 cursada.
@@ -142,7 +142,8 @@
               </p>
             </div>
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
+
             </div>
           </article>
 
@@ -167,7 +168,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
             </div>
           </article>
 
@@ -183,7 +184,7 @@
               <p>
                 La Universidad Interamericana para el Desarrollo es una
                 universidad privada mexicana, contando con 50 campuses, teniendo
-                su precensia en más de la mitad de las entidades federativas de
+                su precencia en más de la mitad de las entidades federativas de
                 México. Ofrece 20 licenciaturas y 50 programas educativos de
                 educación media superior y superior en varias áreas, como
                 negocios, pedalogía etc.
@@ -195,7 +196,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
             </div>
           </article>
 
@@ -224,7 +225,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
             </div>
           </article>
 
@@ -250,7 +251,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
             </div>
           </article>
           <article>
@@ -275,7 +276,7 @@
             </div>
 
             <div class="centro_colores_2">
-              <a class="colores2" href="/register">Únete</a>
+              <a class="colores2" href="#" @click.prevent="goToRegister">Únete</a>
             </div>
           </article>
         </div>
@@ -351,6 +352,17 @@
   </div>
 </template>
 
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToRegister = () => {
+  router.push('/register');
+};
+</script>
+
+
 <style>
 * {
   color: white !important;
@@ -371,32 +383,6 @@ h5,
 h6 {
   color: white !important;
   /* Para títulos y párrafos */
-}
-
-@media (max-width: 768px) {
-  .amigosxd {
-    margin-top: 20px;
-  }
-
-  .space {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .articles article {
-    max-width: 100%;
-    /* Artículos ocupan el ancho completo */
-  }
-
-  .article-preview {
-    padding: 16px;
-    /* Reduce el padding en móviles */
-  }
-
-  .divisor {
-    margin: 30px 0;
-  }
 }
 
 .separacionr {
@@ -744,18 +730,6 @@ h3 {
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .resenas article {
-    max-width: 100%;
-    /* Se adapta a la pantalla móvil */
-  }
-
-  .resenas figure img {
-    height: 40px;
-    width: 40px;
-  }
-}
-
 body {
   font-family: "poppins", sans-serif;
 }
@@ -839,43 +813,38 @@ body {
   margin-top: 30;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    text-align: center;
-  }
-}
+
 
 .social-icons {
   margin-top: 20px;
 }
 
 @media (max-width: 768px) {
+
+  .amigosxd {
+    margin-top: 20px;
+  }
+
   .space {
     margin-top: 10px;
     margin-bottom: 30px;
     text-align: center;
   }
-  
 
-  .unib {
-    width: 100% !important;
-    height: auto !important;
+  .articles article {
+    max-width: 100%;
+    /* Artículos ocupan el ancho completo */
+  }
+
+  .article-preview {
+    padding: 16px;
+    /* Reduce el padding en móviles */
   }
 
   .divisor {
     margin: 30px 0;
   }
 
-  .resenas-comentario {
-    padding: 10px;
-  }
-
-  .resenas-comentario h2 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
   .form-container {
     align-items: center !important; /* Centra los elementos de la columna izquierda */
     text-align: center; /* Alinea el texto al centro */
@@ -931,9 +900,48 @@ body {
     display: block;
   }
 
+  .resenas article {
+    max-width: 100%;
+  }
+
+  .resenas figure img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .space {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
   
 
+  .unib {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .divisor {
+    margin: 30px 0;
+  }
+
+  .resenas-comentario {
+    padding: 10px;
+  }
+
+  .resenas-comentario h2 {
+    font-size: 18px;
+  }
 }
+
+.row img {
+    margin: 0 auto; /* Centra las imágenes de la columna derecha */
+  }
+
 
 
 </style>

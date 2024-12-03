@@ -1,89 +1,104 @@
-<template>
-
-<div class="main-content">
-
-    
-<div class="container-fluid p-0">
-    <div class="row no-gutters ayudaa">
-      <!-- Sección izquierda con la imagen -->
-      <div class="col-12 col-md-8 izquierda"></div>
-      <!-- Sección derecha con contenido -->
-      <div class="col-12 col-md-4 d-flex align-items-center justify-content-center contenido">
-        <div>
-
-
-          <div class="signin-box">
-        <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="">
-        <h1 class="title">Register an account</h1>
-        <div class="form-group">
-          <input 
-            type="text" 
-            placeholder="Email" 
-            v-model="email"
-            class="input-field"
-          />
-        </div>
-        <div class="form-group">
-          <input 
-            type="password" 
-            placeholder="Password" 
-            v-model="password"
-            class="input-field"
-          />
+<template> 
+  <div ref="mainContent" class="main-content">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters ayudaa">
+        <!-- Sección izquierda con la imagen -->
+        <div class="col-12 col-md-8 izquierda"></div>
+        <!-- Sección derecha con contenido -->
+        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center contenido">
           <div>
-            <p v if="errMsg"> {{ errMsj }} </p>
+            <div class="signin-box">
+              <img src="https://i.ibb.co/tJwJ1vM/arcanum-logo-libro.png" alt="" />
+              <h1 class="title">Register an account</h1>
+              <div class="form-group">
+                <input 
+                  type="text" 
+                  placeholder="Email" 
+                  v-model="email"
+                  class="input-field"
+                />
+              </div>
+              <div class="form-group">
+                <input 
+                  type="password" 
+                  placeholder="Password" 
+                  v-model="password"
+                  class="input-field"
+                />
+                <div>
+                  <p v-if="errMsg"> {{ errMsg }} </p>
+                </div>
+              </div>
+              <div class="button-group">
+                <button @click="register" class="submit-btn">Submit</button>
+                <button @click="signInWithGoogle" class="google-btn">
+                  Sign In With Google
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="button-group">
-          <button @click="register" class="submit-btn">Submit</button>
-          <button @click="signInWithGoogle" class="google-btn">
-            Sign In With Google
-          </button>
-        </div>
-      </div>
-
-      
         </div>
       </div>
     </div>
   </div>
-
-
-
-    </div>
 </template>
 
 <script setup>
-import { ref } from "vue"
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
-import { useRouter } from "vue-router"; //IMPORT ROUTER
+import { ref, onMounted } from "vue";
+import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useRouter } from "vue-router";
 
-const email = ref(""); 
-
+const email = ref("");
 const password = ref("");
-const router = useRouter() //get a reference to our router
+const errMsg = ref(""); // Variable para el mensaje de error
+const mainContent = ref(null); // Ref para el contenedor principal
+const router = useRouter();
+const isFirstLoad = ref(true); // Variable para controlar si es la primera carga
 
 const register = () => {
-    const auth = getAuth(); //from firebase / auth
-    createUserWithEmailAndPassword(auth, email.value, password.value)
+  const auth = getAuth();
+  createUserWithEmailAndPassword(auth, email.value, password.value)
     .then(() => {
-        console.log ("Successfully registered")
-        router.push('/Feed'); //redireccionar a feed
+      console.log("Successfully registered");
+      router.push('/Feed');
     })
-    .catch ((error) => {
-        console.log(error.code);
+    .catch((error) => {
+      console.log(error.code);
+      errMsg.value = "Error registering user: " + error.message;
+    });
+};
+
+// Función para iniciar sesión con Google
+const signInWithGoogle = () => {
+  const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // El usuario ha iniciado sesión con éxito
+      const user = result.user;
+      console.log("User signed in with Google:", user);
+      router.push('/Feed'); // Redirige a la página de Feed
     })
-}
+    .catch((error) => {
+      console.log("Error signing in with Google:", error.message);
+      errMsg.value = "Error signing in with Google: " + error.message;
+    });
+};
 
-// Esto redirige al inicio (ruta de login o signin) cuando se recarga la página
-if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
-  // Redirige a la página de inicio de sesión
-  window.location.href = '/';
-}
-
-
+// Detectar recarga y modificar márgenes
+onMounted(() => {
+  // Verificar si es la primera carga y recargar solo una vez
+  if (isFirstLoad.value) {
+    isFirstLoad.value = false; // Marcar que ya se ha cargado una vez
+    if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+      if (mainContent.value) {
+        mainContent.value.style.marginLeft = "0";
+        mainContent.value.style.marginRight = "0";
+      }
+    }
+  }
+});
 </script>
-
 
 
 <style scoped>
@@ -249,7 +264,7 @@ body, html {
   }
   
   .google-btn {
-    background-color: #fff;
+    background-color: #000000;
     color: #757575;
     border: 1px solid #ddd;
   }
