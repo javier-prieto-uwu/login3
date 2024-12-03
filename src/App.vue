@@ -29,13 +29,12 @@
             <li class="nav-item">
               <router-link to="/" class="nav-link" active-class="active">Inicio</router-link>
             </li>
-            <li class="nav-item">
-              <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
-            </li>
             <li> <router-link to="/about" class="nav-link" active-class="active">Nosotros</router-link></li>
             <li class="nav-item">
-              
               <router-link to="/contact" class="nav-link" active-class="active">Contacto</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/sign-in" class="nav-link" active-class="active">Sign In</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/register" class="nav-link" active-class="active">Register</router-link>
